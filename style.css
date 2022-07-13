@@ -82,7 +82,8 @@ main{
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    padding-left: 30%;
+    padding-left: 30%; 
+    position: relative;
 }
 
 .css-typing p {
@@ -285,13 +286,13 @@ main{
 
 .container-fluid.about{
     width: 85%;
-    height: 37rem;
+    height: auto;
     display: flex;
     align-items: flex-start;
     justify-content: center;
     flex-direction: column;
     position: relative;
-    overflow: visible;
+    padding-top: 5rem;
 }
 
 .container-fluid.about .about.container{
@@ -569,7 +570,7 @@ main{
     width: 51vw;
     border-radius: 0.75rem;
     position: absolute;
-    left: -5rem;
+    left: -4rem;
     filter: grayscale(80%);
 }
 
@@ -590,9 +591,14 @@ main{
 
 /* CONTACT */
 
-.container-fluid.about.resume.contact,
 .container-fluid.about.resume{
-    height: 25rem;
+    height: 20rem;
+    padding-bottom: 10rem;
+}
+
+.container-fluid.about.resume.contact{
+  height: 20rem;
+  padding-bottom: 10rem;
 }
 
 .contact.container{
@@ -644,4 +650,344 @@ footer p{
     height: 100%;
     padding-left: 5rem;
     padding-right: 5rem;
+}
+
+@media screen and (max-width: 992px) and (min-width: 768px){
+
+  /* INTRODUCTION */
+  .homepage-container{
+    height: 37rem;
+    padding-left: 15%; 
+  }
+  .css-typing p:nth-child(1) {
+    font-size: 1rem;
+  }
+  .css-typing p:nth-child(2) {
+    font-size: 3.5rem;
+  }
+  .css-typing p:nth-child(3) {
+    font-size: 1.5rem;
+  }
+
+  /* ABOUT */
+
+  .container-fluid.about{
+    width: 100%;
+    padding-top: 5rem;
+  }
+
+  .container-fluid.about .about.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .about-paragraph{
+    padding: 0;
+  }
+
+  .container-fluid.about .about.container .paragraph{
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .built.container img{
+    width: 51vw;
+    border-radius: 0.75rem;
+    position: absolute;
+    left: 2rem;
+    filter: grayscale(80%);
+}
+
+}
+@media screen and (min-width: 320px) and (max-width: 768px){
+  main{
+    padding-top: 4rem;
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  /* NAVIGATION */
+  .nav-menu{
+    display: none;
+  }
+
+  .nav-burger-menu-cnt{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 101vw;
+    z-index: -10;
+    background-color: #0A122A;
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+    margin: 0;
+  }
+
+  .nav-burger-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: transparent;
+    height: 100%;
+    width: auto;
+    padding: 0;
+    margin: 0;
+  }
+  
+ .nav-item-burger a{
+  text-decoration: none;
+  color: #4bb7c3;
+  background-color: transparent;
+ }
+
+ .nav-item-burger a:hover{
+  color: #4bb7c3;
+ }
+
+
+ .nav-item-burger a span{
+  text-decoration: none;
+  color: #ffffff;
+  font-weight: 500;
+  background-color: transparent;
+ }
+
+ .nav-item-burger{
+  height: 100%;
+  list-style: none;
+  background-color: transparent;
+  padding: 0.5rem;
+  display: flex;
+  align-self: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
+  padding-left: 30%;
+ }
+
+ .nav-item-burger:hover{
+  background-color: #d9f3ff13;
+ }
+ 
+ i#x-icon{
+  background-color: transparent;
+  color: #ffffff;
+  z-index: 5;
+  position: absolute;
+  right: 2rem;
+  top: 1rem;
+ }
+
+ .navbar.d-lg-none.d-md-none.d-sm-flex button,
+ .navbar.d-lg-none.d-md-none.d-sm-flex a img{
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  margin: 0;
+ }
+
+
+  /* INTRODUCTION */
+  .homepage-container{
+    height: 35rem;
+    padding-left: 2rem; 
+    padding-top: 10rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    animation: none;
+    overflow:-moz-hidden-unscrollable;
+  }
+
+  .css-typing p {
+    border-right: none;
+    font-family: "Courier";
+    font-size: 14px;
+    width: auto;
+    white-space: break-spaces;
+    }
+
+  .css-typing p:nth-child(1) {
+    letter-spacing: 0.2rem;
+    font-size: 1rem;
+    width: auto;
+    -webkit-animation: none;
+    animation: none;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+  }
+  
+  .css-typing p:nth-child(2) {
+    font-size: 3rem;
+    opacity: 1;
+    width: auto;
+    -webkit-animation: none;
+    animation: none;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+  }
+  
+  .css-typing p:nth-child(3) {
+    font-size: 1.4rem;
+    width: auto;
+    opacity: 1;
+    -webkit-animation: none;
+    animation: none;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+  }
+
+  /* ABOUT */
+
+  .container-fluid.about{
+    width: 100%;
+    padding-top: 5rem;
+  }
+
+  .container-fluid.about .about.container{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .about-paragraph{
+    padding: 0;
+  }
+
+  .container-fluid.about .about.container .paragraph{
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-align: left;
+  }
+
+  .icons{
+    width: 4rem;
+    bottom: 0;
+  }
+
+  /*  EXPERIENCE  */ 
+
+  .container-fluid.work{
+    padding-top: 8rem;
+    overflow: visible;
+    height: 100%;
+  }
+
+  .work.container{
+    
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 0;
+    padding-top: 2rem;
+  }
+
+  .work.container .companies{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    border-bottom: none;
+    border-left: none;
+    padding-bottom: 2rem;
+  }
+
+  .companies h3{
+    width: 15rem;
+  }
+
+  .work.container .description{
+    width: 100%;
+    height: 100%;
+    padding: 0;
+  }
+
+    /*  WORK  */
+
+  .container-fluid.about.work{
+    height: auto;
+  }
+
+  .built.container{
+    flex-direction: column;
+  }
+  
+  .built.container .built.text{
+    width: 100%;
+    height: auto;
+    text-align: left;
+  }
+
+  .built.container .built.text h4:first-child{
+    padding-top: 3rem;
+  }
+
+  .built.container .built.text h3{
+    padding-bottom: 2rem;
+  }
+  
+  .built.container .built.text p{
+    background-color: #162450;
+    color: #d6dfe2;
+    padding: 1rem;
+    font-size: 0.9rem;
+    border-radius: 1rem;
+    position: relative;
+    width: 100%;
+    line-height: 1.7rem;
+  }
+  .built.container .built.text h4:nth-child(2){
+    padding: 0;
+  }
+  
+  .built.container .built.text h4 ul{
+      display: flex;
+      align-items: flex-start;
+      flex-direction: row;
+      justify-content: center;
+      z-index: 1;
+      padding: 0;
+  }
+  
+  .built.container img{
+      width: 71vw;
+      border-radius: 0.75rem;
+      position: relative;
+      left: 0rem;
+      filter: grayscale(60%);
+  }
+
+  .container-fluid.about.resume{
+    height: auto;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 6rem;
+    overflow: hidden;
+  }
+  .container-fluid.about.resume h2,
+  .container-fluid.about.work h2,
+  .container-fluid.work h2{
+    text-align: center;
+  }
+
+  .container-fluid.about.resume.contact{
+    height: 30rem;
+    position: static;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
 }
