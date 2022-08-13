@@ -502,14 +502,59 @@ main{
 
 /* WORK*/ 
 
+.container-fluid.about.work{
+  flex-shrink: 0;
+  height: 100%;
+}
+
 .built.container{
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
     flex-direction: row;
     width: 100%;
+    flex-basis: auto;
+    flex-shrink: 0;
 }
 
+.built.container:nth-child(3){
+  padding-top: 6rem;
+  width: 100%;
+}
+
+.built.container:nth-child(3) .built.text{
+  width: 100%;
+  height: auto;
+  text-align: left;
+}
+
+.built.container:nth-child(3) .built.text p{
+  position: absolute;
+  left: 0;
+}
+
+.built.container:nth-child(3) .built.text h4 ul{
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.built.container:nth-child(3) img:first-child{
+  width: 45vw;
+  bottom: 0;
+  height: auto;
+  left: auto;
+  right: 3rem;
+}
+
+.built.container:nth-child(3) img:last-child{
+  width: 20vw;
+  height: auto;
+  left: auto;
+  right: 0;
+  bottom: 2rem;
+}
 
 .built.container .built.text{
     width: 40%;
@@ -573,6 +618,7 @@ main{
     left: -4rem;
     filter: grayscale(80%);
 }
+
 
 .built.container img:hover{
     filter: none;
@@ -697,8 +743,19 @@ footer p{
     width: 51vw;
     border-radius: 0.75rem;
     position: absolute;
-    left: 2rem;
+    left: 1rem;
     filter: grayscale(80%);
+}
+
+.built.container:nth-child(3) img:first-child{
+  visibility: hidden;
+}
+
+.built.container:nth-child(3) img:last-child{
+  position: absolute;
+  width: 30vw;
+  right: 1rem;
+  bottom: 3rem;
 }
 
 }
@@ -913,12 +970,16 @@ footer p{
 
     /*  WORK  */
 
-  .container-fluid.about.work{
-    height: auto;
-  }
+    .container-fluid.about.work{
+      flex-shrink: 0;
+      height: 100%;
+      overflow: visible;
+    }
 
   .built.container{
     flex-direction: column;
+    flex-shrink: 0;
+    height: auto;
   }
   
   .built.container .built.text{
@@ -966,9 +1027,26 @@ footer p{
       filter: grayscale(60%);
   }
 
+  .built.container:nth-child(3) a{
+    height: 10vh;
+  }
+
+  .built.container:nth-child(3) img:first-child{
+    position: relative;
+    left: 0rem;
+    width: 71vw;
+  }
+  
+  .built.container:nth-child(3) img:last-child{
+    position: relative;
+    left: 0rem;
+    width: 25vw;
+    top: -10rem;
+  }
+
   .container-fluid.about.resume{
-    height: auto;
-    position: static;
+    height: 100%;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: center;
