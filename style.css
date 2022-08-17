@@ -515,11 +515,13 @@ main{
     width: 100%;
     flex-basis: auto;
     flex-shrink: 0;
+    height: 100%;
+    padding-top: 5rem;
 }
 
 .built.container:nth-child(3){
-  padding-top: 6rem;
   width: 100%;
+  padding-top: 10rem;
 }
 
 .built.container:nth-child(3) .built.text{
@@ -979,13 +981,24 @@ footer p{
   .built.container{
     flex-direction: column;
     flex-shrink: 0;
-    height: auto;
+    height: 100%;
+    padding-top: 0;
+    z-index: 10;
+  }
+
+  .built.container:nth-child(3){
+    width: 100%;
+    padding-top: 5vh;
   }
   
   .built.container .built.text{
     width: 100%;
     height: auto;
     text-align: left;
+  }
+
+  .built.container:nth-child(3) .built.text{
+    padding-top: 0;
   }
 
   .built.container .built.text h4:first-child{
@@ -1028,7 +1041,7 @@ footer p{
   }
 
   .built.container:nth-child(3) a{
-    height: 10vh;
+    height: 10rem;
   }
 
   .built.container:nth-child(3) img:first-child{
@@ -1051,7 +1064,7 @@ footer p{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding-top: 6rem;
+    padding-top: 50vh;
     overflow: hidden;
   }
   .container-fluid.about.resume h2,
